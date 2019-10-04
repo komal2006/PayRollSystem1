@@ -1,18 +1,12 @@
 package com.lambton;
 
 public class Employee {
-    int x;
-    int y;
-    int ccv;
+    private String name;
+    private int age;
+  
+    private double earnings;
 
 
-   /* kjdschsdkcndwmc,nlkd
-    dsncdsklcdcbdscds
-            dslkbcdc
-    sdcnbsdc'1
-            dscdskjcdscdsc
-    dsckjdsds
-        cdslkcds
-    cldsjk*/
+
     
 }
