@@ -42,4 +42,7 @@ public abstract class Employee implements IPrintable {
         age=age-yearofBirth-1;
         return age;
     }
-}
+    public double calcEarnings(){
+        return this.earnings=1000;
+
+    }
