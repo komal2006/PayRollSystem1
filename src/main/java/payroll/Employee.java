@@ -48,4 +48,11 @@ public abstract class Employee implements IPrintable {
     }
     public Vehicle getVehicle() {
         return vehicle;
+    }public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
+
+    @Override
+    public String printMyData() {
+        return "Employee Name: "+getName()+"\n"+"Employee Age"+getAge();
     }
