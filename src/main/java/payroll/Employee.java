@@ -46,3 +46,6 @@ public abstract class Employee implements IPrintable {
         return this.earnings=1000;
 
     }
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
