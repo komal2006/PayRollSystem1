@@ -9,6 +9,11 @@ public abstract class Employee {
     private Vehicle vehicle;
     private double earnings;
 
+    public Employee(String name, int age, Vehicle vehicle) {
+        this.name=name;
+        this.age=calcBirthYear(age);
+        setVehicle(vehicle);
+    }
 
     public String getName() {
         return name;
