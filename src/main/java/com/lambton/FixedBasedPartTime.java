@@ -1,4 +1,9 @@
 package com.lambton;
 
-public class FixedBasedPartTime {
+public class FixedBasedPartTime
+{
+    double fixedAmount ;
+    double totalEarnings;
+
+
 }
