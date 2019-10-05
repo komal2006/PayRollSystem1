@@ -21,7 +21,8 @@ public class RunCode {
         for (Employee e: employeeArrayList) {
             System.out.println("----------------------------------------------------------------------------- \n");
             System.out.println(e);
-            totalPayroll=totalPayroll+e.calcEarnings();
+            totalPayroll = totalPayroll + e.calcEarnings();
+        }
 
 
     }
