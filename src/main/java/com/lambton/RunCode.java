@@ -1,5 +1,7 @@
 package com.lambton;
 
+import java.util.ArrayList;
+
 public class RunCode {
     public static double totalPayroll = 0;
 
