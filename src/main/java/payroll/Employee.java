@@ -3,11 +3,19 @@ package com.lambton;
 
 import java.time.LocalDate;
 
-public abstract class Employee implements IPrintable {
+public abstract class Employee implements IPrintable{
     private String name;
     private int age;
     private Vehicle vehicle;
     private double earnings;
+
+    public int calcBirthYear(int yearofBirth) 
+    {
+        LocalDate end =  LocalDate.now();
+        int age=Integer.valueOf(end.toString().substring(0, 4))  ;
+        age=age-yearofBirth-1;
+        return age;
+    }
 
     public double getEarnings() {
         return earnings;
@@ -38,6 +46,21 @@ public abstract class Employee implements IPrintable {
     public void setAge(int age) {
         this.age = age;
     }
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
+
+    public double getEarnings() {
+        return earnings;
+    }
+
+    public void setEarnings(double earnings) {
+        this.earnings = earnings;
+    }
 
     public int calcBirthYear(int yearofBirth) {
         //yearofBirth=getAge();
@@ -51,15 +74,6 @@ public abstract class Employee implements IPrintable {
         return this.earnings = 1000;
 
     }
-
-    public Vehicle getVehicle() {
-        return vehicle;
-    }
-
-    public void setVehicle(Vehicle vehicle) {
-        this.vehicle = vehicle;
-    }
-
     @Override
     public String printMyData() {
         return "Employee Name: " + getName() + "\n" + "Employee Age" + getAge();
