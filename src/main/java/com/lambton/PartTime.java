@@ -21,5 +21,9 @@ public class PartTime
     public void setHoursWorked(float hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
+    @Override
+    public String printMyData() {
+        return super.printMyData();
+    }
 
 }
