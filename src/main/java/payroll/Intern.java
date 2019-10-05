@@ -17,5 +17,13 @@ public class Intern {
         this.schoolName = schoolName;
 
     }
+    public double getEarnings() {
+        return earnings;
+    }
+
+    public void setEarnings(double earnings) {
+        this.earnings = earnings;
+    }
+
 
 }
