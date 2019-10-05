@@ -30,6 +30,23 @@ public class Intern
         this.vehicle = vehicle;
     }
 
+    @Override
+    public String printMyData() {
+        return this.toString();
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Name: " + getName() + "\n" + "Age: " + getAge() + "\n");
+        stringBuilder.append("Employee is an Intern")
+                .append("\n -School name: " + getSchoolName())
+                .append("\n -Earnings: " + calcEarnings()+ "\n");
+        checkVehicle(stringBuilder);
+        return String.valueOf(stringBuilder);
+    }
+
+
     private void checkVehicle(StringBuilder stringBuilder) {
         if (vehicle == null) {
             stringBuilder.append("Employee has no vehicle registerd");
