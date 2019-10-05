@@ -12,5 +12,10 @@ public class Intern {
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
+    public Intern(String name, int age, String schoolName,Vehicle vehicle) {
+        super(name, age, vehicle);
+        this.schoolName = schoolName;
+
+    }
 
 }
