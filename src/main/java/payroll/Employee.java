@@ -9,18 +9,26 @@ public abstract class Employee implements IPrintable{
     private Vehicle vehicle;
     private double earnings;
 
-    public Employee(String name, int age, Vehicle vehicle) {
-        this.name=name;
-        this.age=calcBirthYear(age);
-        setVehicle(vehicle);
-    }
-
-    public int calcBirthYear(int yearofBirth) {
-
+    public int calcBirthYear(int yearofBirth) 
+    {
         LocalDate end =  LocalDate.now();
         int age=Integer.valueOf(end.toString().substring(0, 4))  ;
         age=age-yearofBirth-1;
         return age;
+    }
+
+    public double getEarnings() {
+        return earnings;
+    }
+
+    public void setEarnings(double earnings) {
+        this.earnings = earnings;
+    }
+
+    public Employee(String name, int age, Vehicle vehicle) {
+        this.name =  name;
+        this.age = calcBirthYear(age);
+        setVehicle(vehicle);
     }
 
     public String getName() {
@@ -38,7 +46,6 @@ public abstract class Employee implements IPrintable{
     public void setAge(int age) {
         this.age = age;
     }
-
     public Vehicle getVehicle() {
         return vehicle;
     }
@@ -55,12 +62,20 @@ public abstract class Employee implements IPrintable{
         this.earnings = earnings;
     }
 
-
-    @Override
-    public String printMyData() {
-        return "Employee Name: "+getName()+"\n"+"Employee Age"+getAge();
+    public int calcBirthYear(int yearofBirth) {
+        //yearofBirth=getAge();
+        LocalDate end = LocalDate.now();
+        int age = Integer.valueOf(end.toString().substring(0, 4));
+        age = age - yearofBirth - 1;
+        return age;
     }
 
+    public double calcEarnings() {
+        return this.earnings = 1000;
+
+    }
+    @Override
+    public String printMyData() {
+        return "Employee Name: " + getName() + "\n" + "Employee Age" + getAge();
+    }
 }
-
-
