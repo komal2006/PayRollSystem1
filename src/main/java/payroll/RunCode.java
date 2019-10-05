@@ -18,6 +18,10 @@ public class RunCode {
         employeeArrayList.add(fixedBased);
         employeeArrayList.add(fullTime);
 
+        for (Employee e: employeeArrayList) {
+            System.out.println("----------------------------------------------------------------------------- \n");
+            System.out.println(e);
+            totalPayroll=totalPayroll+e.calcEarnings();
 
 
     }
