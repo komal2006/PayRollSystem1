@@ -3,7 +3,7 @@ package payroll;
 
 import java.time.LocalDate;
 
-public abstract class Employee {
+public abstract class Employee  {
     private String name;
     private int age;
     private Vehicle vehicle;
@@ -16,7 +16,7 @@ public abstract class Employee {
     }
 
     public int calcBirthYear(int yearofBirth) {
-        
+
         LocalDate end =  LocalDate.now();
         int age=Integer.valueOf(end.toString().substring(0, 4))  ;
         age=age-yearofBirth-1;
@@ -54,6 +54,13 @@ public abstract class Employee {
     public void setEarnings(double earnings) {
         this.earnings = earnings;
     }
+
+
+    @Override
+    public String printMyData() {
+        return "Employee Name: "+getName()+"\n"+"Employee Age"+getAge();
+    }
+
 }
 
 
