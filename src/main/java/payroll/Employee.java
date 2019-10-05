@@ -18,7 +18,7 @@ public abstract class Employee implements IPrintable {
     }
 
     public Employee(String name, int age, Vehicle vehicle) {
-        this.name = name;
+        this.name =  name;
         this.age = calcBirthYear(age);
         setVehicle(vehicle);
     }
