@@ -29,4 +29,10 @@ public class Intern
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
+
+    public Intern(String schoolName, double earnings, Vehicle vehicle) {
+        this.schoolName = schoolName;
+        this.earnings = earnings;
+        this.vehicle = vehicle;
+    }
 }
