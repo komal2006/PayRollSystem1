@@ -10,7 +10,7 @@ public class RunCode {
         CommissionBasedPartTime commissionBasedPartTime= new CommissionBasedPartTime("Harman", 1994, 40.0f,10.0f, 40,bike);
         FixedBasedPartTime fixedBased=new FixedBasedPartTime("Charan",1993,20.0f,9.0f,300,null);
         Intern intern=new Intern("Varinder",1994,"Cambrian College",car1);
-
+        FullTime fullTime=new FullTime("Komal",1993,7200,1000,new Car("Mustang","Black","CXVT",3000.0,"5"));
 
 
 
