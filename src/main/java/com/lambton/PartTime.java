@@ -1,4 +1,8 @@
 package com.lambton;
 
-public class PartTime {
+public class PartTime
+{
+    private double rate;
+    private float hoursWorked;
+
 }
