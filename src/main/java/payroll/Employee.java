@@ -1,4 +1,4 @@
-package payroll;
+package com.lambton;
 
 
 import java.time.LocalDate;
