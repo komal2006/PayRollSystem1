@@ -5,5 +5,5 @@
       <module name="PayRollSystem.main" target="1.8" />
       <module name="PayRollSystem.test" target="1.8" />
     </bytecodeTargetLevel>
-  </component>
+ // </component>
 </project>
