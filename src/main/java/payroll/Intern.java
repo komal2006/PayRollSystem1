@@ -1,4 +1,4 @@
-package payroll;
+package com.lambton;
 
 public class Intern {
     private String schoolName;
