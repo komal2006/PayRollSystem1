@@ -23,6 +23,10 @@ public class FixedBasedPartTime extends PartTime {
 
     }
 
+    @Override
+    public String printMyData() {
+        return super.printMyData();
+    }
 
 
 }
