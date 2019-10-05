@@ -9,6 +9,12 @@ public class CommissionBasedPartTime {
         return commissionPerc;
     }
 
+
+    public CommissionBasedPartTime(String name, int age, float rate, float hoursWorked, double commissionPerc,Vehicle vehicle) {
+        super(name, age, rate, hoursWorked, vehicle);
+        setcommissionPerc(commissionPerc);
+    }
+
     public void setCommissionPerc(double commissionPerc) {
         this.commissionPerc = commissionPerc;
     }
