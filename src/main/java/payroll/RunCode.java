@@ -12,6 +12,11 @@ public class RunCode {
         Intern intern=new Intern("Varinder",1994,"Cambrian College",car1);
         FullTime fullTime=new FullTime("Komal",1993,7200,1000,new Car("Mustang","Black","CXVT",3000.0,"5"));
 
+        ArrayList<Employee> employeeArrayList= new ArrayList<>();
+        employeeArrayList.add(commissionBasedPartTime);
+        employeeArrayList.add(intern);
+        employeeArrayList.add(fixedBased);
+        employeeArrayList.add(fullTime);
 
 
 
