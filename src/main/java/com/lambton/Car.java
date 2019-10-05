@@ -10,5 +10,18 @@ public class Car extends Vehicle {
         this.capacity=capacity;
 
     }
+    public Double getDistanceTravelled() {
+        return distanceTravelled;
+    }
+    public void setDistanceTravelled(Double distanceTravelled) {
+        this.distanceTravelled = distanceTravelled;
+    }
+    public String getCapacity() {
+        return capacity;
+    }
+    public void setCapacity(String capacity) {
+        this.capacity = capacity;
+    }
+
 
 }
