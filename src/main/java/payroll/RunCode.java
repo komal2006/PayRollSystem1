@@ -1,4 +1,4 @@
-package payroll;
+package com.lambton;
 
 public class RunCode {
     public static double totalPayroll = 0;
