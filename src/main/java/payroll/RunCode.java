@@ -23,6 +23,17 @@ public class RunCode {
             System.out.println(e);
             totalPayroll = totalPayroll + e.calcEarnings();
         }
+        System.out.println("\nTotal Payroll: "+totalPayroll+" Canadian Dollars");
+
+
+    }
+
+
+
+
+}
+
+
 
 
     }
