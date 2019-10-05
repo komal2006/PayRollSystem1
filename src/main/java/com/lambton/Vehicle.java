@@ -1,11 +1,11 @@
 package com.lambton;
 
-public class Vehicle
-{
+public class Vehicle {
 
     private String make;
     private String color;
     private String plate;
+
 
     public String getMake() {
         return make;
@@ -28,6 +28,13 @@ public class Vehicle
     }
 
     public void setPlate(String plate) {
+        this.plate = plate;
+    }
+
+
+    public Vehicle(String make, String color, String plate) {
+        this.make = make;
+        this.color = color;
         this.plate = plate;
     }
 }
