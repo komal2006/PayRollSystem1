@@ -15,6 +15,14 @@ public abstract class Employee {
         setVehicle(vehicle);
     }
 
+    public int calcBirthYear(int yearofBirth) {
+        
+        LocalDate end =  LocalDate.now();
+        int age=Integer.valueOf(end.toString().substring(0, 4))  ;
+        age=age-yearofBirth-1;
+        return age;
+    }
+
     public String getName() {
         return name;
     }
