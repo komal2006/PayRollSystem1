@@ -2,6 +2,8 @@ package com.lambton;
 
 public class Intern
 {
-    int a;
+    private String schoolName;
+    private double earnings;
+    private Vehicle vehicle;
 
 }
