@@ -1,6 +1,6 @@
 package com.lambton;
 
-public class PartTime
+public abstract class PartTime extends Employee
 {
     private double rate;
     private float hoursWorked;
